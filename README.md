@@ -2,7 +2,7 @@
 
 ## How to use
 
-### Meu Rancho's menu/dino customization on Next.js
+### Meu Rancho's menu/dino customization
 
 This is an exclusive thirty party app integration built with Next.js.
 
