@@ -1,34 +1,61 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Meu Rancho MenuDino
 
-## Getting Started
+## How to use
 
-First, run the development server:
+### Meu Rancho's menu/dino customization on Next.js
+
+This is an exclusive thirty party app integration built with Next.js.
+
+The app's main purpose is to serve itself as a domain redirection origin while hosting a few static resources to be shared with the Consumer PDV software, which in turn manages the MenuDino app.
+
+### Usage
+
+After forking the project, refer to `resources/scss/app.scss`, which holds all the styles for customizing the menudino app. All js functions are located under `resources/js/app.js` and `resources/js/mr-app-config.js` respectively. Modify those as per your requirements.
+
+### Laravel Mix
+
+Apart from Next.js common set up, the project uses Laravel Mix to proccess and bundle all **.scss** & **.js** files mentioned above to be served as static resources under `/public/css/app.css` and `/public/js/app.min.js`, which are made available after deploying the project to vercel.
+
+#### Laravel Mix commands
+
+To process the unminified files while developing, run
 
 ```bash
-npm run dev
-# or
+yarn development
+```
+
+To process the minified files for production, run
+
+```bash
+yarn production
+```
+
+### Next.js
+
+The project sets a custom configuration for Next.js, including a permanent domain redirection. Please refer to `next.config.js` for more details.
+
+#### Next.js commands
+
+```bash
 yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+```bash
+yarn build
+```
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+```bash
+yarn start
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+### Deployment
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+Deploy the example using [Vercel](https://vercel.com)
 
-## Learn More
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/api-routes-cors&project-name=api-routes-cors&repository-name=api-routes-cors)
 
-To learn more about Next.js, take a look at the following resources:
+#### Credits
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+[Adriano Monecchi](https://twitter.com/dico_monecchi)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+#### Thanks 👍

@@ -4,6 +4,10 @@ mix.override((config) => {
     delete config.watchOptions;
 });
 
+mix.autoload({
+    jquery: ['$', 'window.jQuery']
+});
+
 mix.setPublicPath('public')
     .sass('resources/scss/app.scss', 'public/css')
     .combine([

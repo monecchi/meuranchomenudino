@@ -29,19 +29,19 @@ module.exports = {
   },
 }
 
-module.exports = {
-  webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {
-    // Note: we provide webpack above so you should not `require` it
-    // Perform customizations to webpack config
-    config.plugins.push(new webpack.IgnorePlugin(/\/__tests__\//))
-    config.plugins.push(new webpack.DefinePlugin({
-      'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV),
-      'process.env.BUILD_VERSION': JSON.stringify(pkg.version)
-    }))
-    // Important: return the modified config
-    return config
-  },
-}
+// module.exports = {
+//   webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {
+//     // Note: we provide webpack above so you should not `require` it
+//     // Perform customizations to webpack config
+//     config.plugins.push(new webpack.IgnorePlugin(/\/__tests__\//))
+//     config.plugins.push(new webpack.DefinePlugin({
+//       'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV),
+//       'process.env.BUILD_VERSION': JSON.stringify(pkg.version)
+//     }))
+//     // Important: return the modified config
+//     return config
+//   },
+// }
 
 // For more info, visit https://nextjs.org/docs/basic-features/image-optimization#device-sizes
 // https://nextjs.org/docs/basic-features/image-optimization#image-sizes
