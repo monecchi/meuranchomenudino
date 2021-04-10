@@ -1,22 +1,3 @@
-//
-// Redirect set up
-// https://nextjs.org/docs/api-reference/next.config.js/redirects
-//
-module.exports = {
-
-  // Force redirection to menudino
-
-  async redirects() {
-    return [
-      {
-        source: '/',
-        destination: 'https://menudino.com/meurancho',
-        permanent: true,
-      },
-    ]
-  },
-}
-
 // 
 // Use webpack 5 on nextjs
 //

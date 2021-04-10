@@ -52,7 +52,7 @@ yarn start
 
 Deploy the example using [Vercel](https://vercel.com)
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/api-routes-cors&project-name=api-routes-cors&repository-name=api-routes-cors)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/monecchi/meuranchomenudino.git&project-name=menudino&repository-name=menudino)
 
 #### Credits
 

@@ -12,3 +12,19 @@ export default function Home() {
     </div>
   )
 }
+
+//
+// Permanent server side redirect
+//
+export default getServerSideProps = async (context) => {
+
+  const { res } =  context;
+
+  res.setHeader("location", "https://menudino.com/meurancho");
+  res.statusCode = 301;
+  res.end()
+
+  //res.writeHead(301, { location: "https://menudino.com/meurancho" } );
+  //res.end();
+
+}
