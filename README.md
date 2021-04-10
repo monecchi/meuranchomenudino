@@ -54,7 +54,7 @@ Deploy the example using [Vercel](https://vercel.com)
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/api-routes-cors&project-name=api-routes-cors&repository-name=api-routes-cors)
 
-#### Credits:
+#### Credits
 
 [Adriano Monecchi](https://twitter.com/dico_monecchi)
 
