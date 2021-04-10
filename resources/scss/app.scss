@@ -1,0 +1,54 @@
+/**
+*
+* app: Meu Rancho Pizzaria
+* theme: Meu Rancho Menu Dino
+* description: Customização do web app menudino para a Pizzaria Meu Rancho
+* version: 1.0.0
+* author: Adriano Monecchi
+* company: Meu Rancho Pizzaria Ltda
+* website: https://pizzariameurancho.com.br
+* url: https://novoapp.menudino.com/meurancho
+* 
+*/
+
+// 
+// Global Reset, Overrides
+//
+
+@import './variables';
+@import './root';
+@import './reset';
+//@import './fonts';
+
+// Bootstrap Core Overrides
+@import './bootstrap';
+@import './utilities/typography';
+@import './components/buttons';
+
+// Global Component Styles
+@import './components/home-page';
+@import './components/navbar-topbar';
+@import './components/cardapio-header';
+@import './components/cardapio-categories-nav';
+@import './components/cardapio';
+@import './components/sidebar';
+@import './components/modal';
+@import './components/modal-cardapio';
+@import './components/modal-login';
+@import './components/login';
+@import './components/forms';
+@import './components/navbar-carrinho';
+@import './components/tab-bar';
+@import './components/footer';
+
+
+// Utilities
+@import './components/cookies_notice';
+@import './utilities/animations';
+
+
+.mr-logo {
+    &.white {
+        display: block;
+    }
+}

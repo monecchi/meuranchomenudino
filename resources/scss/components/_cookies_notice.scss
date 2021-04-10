@@ -1,0 +1,31 @@
+// 
+// Cookies Notice
+// 
+
+#verifica-cookies {
+    justify-content: center;
+    width: 100%;
+    padding-top: 70px;
+    margin: 0 auto;
+
+    .panel {
+        position: relative;
+        display: block;
+        max-width: 80%;
+        margin: 0 auto;
+        z-index: 999;
+
+        &.panel-wraning {
+
+            .panel-heading {
+                background-color: $brand;
+            }
+
+        }
+
+        .panel-body {
+            font-size: 16px;
+            color: $gray-800;
+        }
+    }
+}

@@ -1,0 +1,112 @@
+// 
+// Cardapio Categories Nav
+// 
+
+#secao-categories {
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 0 auto !important;
+        max-width: 1366px !important;
+    }
+
+    .container {
+        &:before, &:after {
+            display: none !important;
+        }
+
+        &:after {
+            clear: none !important;
+        }
+
+        ul {
+            &:before, &:after {
+                display: none !important;
+            }
+        }
+    }
+}
+
+
+.nav-categorias {
+
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1366px;
+    margin: 0 20px 0 20px;
+
+    li {
+        border-bottom: 3px solid #fff;
+
+        a {
+            font-size: 18px;
+            font-weight: 600;
+            color: $gray-700; //#8492a6;
+            padding: 1.2rem 1.5rem;
+            transition: $transition-ease-in-out; //all .2s ease; 
+
+            &:hover,
+            .active {
+                color: $brand;
+            }
+        }
+
+        &.active {
+            border-bottom: 3px solid $brand !important;
+        }
+    }
+
+    & > li {
+        
+        &:first-child > a {
+            padding-left: 1.5rem;
+        }
+        
+        &:last-child > a {
+            padding-right: 1.5rem;
+        }
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .nav-categorias>li:first-child>a {
+        padding-left: 0;
+    }
+    .nav-categorias>li:last-child>a {
+        padding-right: 0;
+    }
+}
+
+#btn-categories-right,
+#btn-categories-left {
+    display: none !important;
+    position: relative !important;
+    top: auto !important;
+    opacity: 1;
+}
+
+#btn-categories-right {
+    right: 0 !important;
+}
+
+#btn-categories-left {
+    left: 0 !important;
+}
+
+@media screen and (min-width: 1360px) {
+
+    #btn-categories-right,
+    #btn-categories-left {
+        display: inline-flex !important;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    #btn-categories-left, #btn-categories-right {
+        display: inline-flex !important;
+    }
+}

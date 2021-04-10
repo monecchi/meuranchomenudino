@@ -1,0 +1,49 @@
+// 
+// Login Modal
+// 
+
+#loginModal {
+
+    // Button Entrar com Email
+    .modal-body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+ 
+        .btn {
+            &.showIdentificarLoginModal {
+                color: #3a3f51;
+                background-color: #ffffff !important;
+                border-color: rgba(0, 0, 0, .125);
+                margin-bottom: 3rem;
+                box-shadow: 0 0 0 transparent;
+                transition: background-color .2s ease, box-shadow .2s ease, transform .2s ease !important;
+
+                &>span {
+                    text-transform: lowercase;
+                }
+
+                &:hover {
+                    border-color: rgba(0, 0, 0, .125);
+                    box-shadow: 0.5rem 0.5rem 0 rgb(233 236 239 / 50%);
+                    transform: translateY(-1px);
+                }
+            }
+        }
+
+        .row {
+            display: flex !important;
+            flex-direction: column;
+            width: 100%;
+
+            div[class*='col-'] {
+                padding: 0;
+                width: 100%;
+            }
+
+            div[class*='col-']:last-of-type > .btn {
+                margin-top: 1rem;
+            }
+        }
+    }
+}

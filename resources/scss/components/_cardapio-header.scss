@@ -1,0 +1,158 @@
+// 
+// Cardapio Header
+// 
+.cardapio-header {
+
+    h1 {
+        letter-spacing: 1px;
+        margin-bottom: 1.5rem;
+    }
+
+    h2 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;        
+    }
+
+    address {
+        margin-bottom: .75rem;
+        font-size: 1.8rem;
+        font-weight: 300;
+    }
+
+    .icon {
+        margin: 1.5rem auto 1.5rem;
+        background-color: transparent !important;
+        border-radius: 50%;
+
+        img {
+            border: none;
+            border-radius: 50%;
+        }
+    }
+
+    .bg {
+        background-position: 50% 50%;
+    }
+
+}
+
+// Força a substituição da imagem do header do cardápio
+#cardapio .cardapio-header .bg {
+    background-image: url("https://res.cloudinary.com/mrancho/image/upload/v1617391596/ih2tuo5dafomgk1ycd9c.png") !important;
+    background-color: #da243a;
+}
+
+@media screen and (max-width: 560px) {
+    #cardapio .cardapio-header .bg {
+        background-size: 120%;
+        background-position: 45% 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .cardapio-header {
+        address {
+            white-space: normal;
+        }
+
+        .inner a[data-target="#detalhesAtendimentoModal"] {
+            font-size: 85%;
+        }
+    }
+}
+
+@media only screen and (min-width: 414px) {
+    .cardapio-header {
+        height: 350px !important;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .cardapio-header {
+        margin-top: 0 !important;
+        margin-right: 0 !important;
+        margin-left: 0 !important;
+    }
+}
+
+
+@media only screen and (min-width: 768px) {
+    .cardapio-header {
+        margin: 0 !important;
+    }
+}
+
+
+// 
+// Restaurant Status Label, custom "aberto" / "fechado" labels
+//
+
+ .label-fechado,
+ .label-aberto {
+     font-size: 85%;
+ }
+
+ .label-fechado[data-toggle="modal"]:before, .label-aberto:before {
+    content:"";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    vertical-align: middle;
+    border-radius: 50%;
+    background-color: #c0ccda;
+    margin: 0 .4rem 0 auto;
+    -webkit-animation-name: flashing;
+    animation-name: flashing;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+
+.label-fechado {
+    color: $brand; //#ef2840;
+
+    &[data-toggle="modal"]:before {
+        background-color: $brand !important;
+        box-shadow: 0 0 0 $brand;
+    }
+
+    &[href] {
+        &:hover {
+            color: $brandAlt;
+        }
+        &:focus {
+            color: $brandAlt;
+        }
+    }
+
+}
+
+.label-aberto {
+    color: $success; // #36b37e;
+
+    &[href] {
+        &:hover {
+            color: $success;
+        }
+        &:focus {
+            color: $success;
+        }
+    }
+}
+
+.label-aberto:before {
+    background-color: $success !important;
+    box-shadow: 0 0 0 $success;
+}
+
+// Label with icon
+.label-fechado > i:before:not(.fa-phone), .label-aberto > i:before {
+    font-family:'FontAwesome';
+    font-size: 1.5rem;
+    content:"\f111";
+    display: inline;
+    vertical-align: middle;
+}

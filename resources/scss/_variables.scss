@@ -1,0 +1,195 @@
+// 
+// Meu rancho Menu Dino variables
+// 
+
+// Color system
+
+$white:    #FFF !default;
+$gray-100: #FAFBFE !default;
+$gray-200: #EFF2F7 !default;
+$gray-300: #E5E9F2 !default;
+$gray-400: #E0E6ED !default;
+$gray-500: #D3DCE6 !default;
+$gray-600: #C0CCDA !default;
+$gray-700: #8492A6 !default;    // Used for text color
+$gray-800: #3C4858 !default;    // Used for headings color
+$gray-900: #273444 !default;
+$gray-1000:#36454F !default;
+$black:    #1F2D3D !default;
+
+$grays: () !default;
+$grays: map-merge((
+  "100": $gray-100,
+  "200": $gray-200,
+  "300": $gray-300,
+  "400": $gray-400,
+  "500": $gray-500,
+  "600": $gray-600,
+  "700": $gray-700,
+  "800": $gray-800,
+  "900": $gray-900,
+  "1000": $gray-1000
+), $grays) !default;
+
+$common-gray-50:  #F9F9F9 !default;
+$common-gray-100: #F2F2F2 !default;
+$common-gray-200: #E9E9E9 !default;
+$common-gray-300: #D9D9D9 !default;
+$common-gray-400: #B5B5B5 !default;
+$common-gray-500: #959595 !default;
+$common-gray-600: #6D6D6D !default;
+$common-gray-700: #5A5A5A !default;
+$common-gray-800: #3B3B3B !default;
+$common-gray-900: #1B1B1B !default;
+
+$common-grays: () !default;
+$common-grays: map-merge((
+  "50":  $common-gray-50,
+  "100": $common-gray-100,
+  "200": $common-gray-200,
+  "300": $common-gray-300,
+  "400": $common-gray-400,
+  "500": $common-gray-500,
+  "600": $common-gray-600,
+  "700": $common-gray-700,
+  "800": $common-gray-800,
+  "900": $common-gray-900,
+  "1000": $common-gray-1000
+), $common-grays) !default;
+
+$brand:   #FC0E36 !default;
+$brandAlt:#EF2840 !default;
+$blue:    #2684FF !default;
+$indigo:  #6E00FF !default;
+$purple:  #510FA8 !default;
+$pink:    #F074AD !default;
+$red:     #EC2121 !default;
+$orange:  #FFAB00 !default;
+$yellow:  #FFCC00 !default;
+$green:   #36B37E !default;
+$teal:    #00B8D9 !default;
+$cyan:    #4BD6E5 !default;
+
+$colors: () !default;
+$colors: map-merge((
+  "brand":      $brand,
+  "brand-alt":  $brandAlt,
+  "blue":       $blue,
+  "indigo":     $indigo,
+  "purple":     $purple,
+  "pink":       $pink,
+  "red":        $red,
+  "orange":     $orange,
+  "yellow":     $yellow,
+  "green":      $green,
+  "teal":       $teal,
+  "cyan":       $cyan,
+  "white":      $white,
+  "gray":       $gray-600,
+  "gray-neutral": $common-gray-100,
+  "gray-dark":  $gray-800
+), $colors);
+
+$primary:       $indigo !default;
+$secondary:     $gray-200 !default;
+$neutral:       $white !default;
+$success:       $green !default;
+$info:          $teal !default;
+$warning:       $orange !default;
+$danger:        $red !default;
+$light:         $gray-200 !default;
+$dark:          $gray-900 !default;
+
+$theme-colors: () !default;
+$theme-colors: map-merge((
+    "primary":      $primary,
+    "secondary":    $secondary,
+    "neutral":      $neutral,
+    "success":      $success,
+    "info":         $teal,
+    "warning":      $warning,
+    "danger":       $danger,
+    "white":        $white,
+    "light":        $light,
+    "dark":         $dark
+), $theme-colors);
+
+$svg-colors: () !default;
+$svg-colors: map-merge((
+  "primary":        $primary,
+  "primary-50":     #FFEBEF,
+  "primary-100":    #FFCCD5,
+  "primary-200":    #FC979D,
+  "primary-300":    #F66C76,
+  "primary-400":    #FF4252,
+  "primary-500":    #FF2035,
+  "primary-600":    #FC0E36,
+  "primary-700":    #EA002F,
+  "primary-800":    #DD0027,
+  "primary-900":    #CF0019,
+  "neutral":    $white,
+
+), $svg-colors);
+
+//
+// Icons
+//
+$icon-family: "Fontawesome";
+$icon-family-alt: "simple-line-icons";
+
+// Spacing
+//
+// Control the default styling of most Bootstrap elements by modifying these
+// variables. Mostly focused on spacing.
+// You can add more entries to the $spacers map, should you need more variation.
+
+
+$spacer: 1rem !default;
+$spacers: () !default;
+$spacers: map-merge((
+    0: 0,
+    1: ($spacer * .25),
+    2: ($spacer * .5),
+    3: $spacer,
+    4: ($spacer * 1.5),
+    5: ($spacer * 3),
+    6: ($spacer * 4.5),
+    7: ($spacer * 6),
+    8: ($spacer * 7.5),
+    9: ($spacer * 9),
+    10: ($spacer * 10.5)
+), $spacers);
+
+// Components
+
+$line-height-xl:              1.5 !default;
+$line-height-lg:              1.5 !default;
+$line-height-sm:              1.5 !default;
+
+$border-width:                1px !default;
+$border-width-sm:             2px !default;
+$border-width-md:             3px !default;
+$border-color:                $gray-200 !default;
+
+$border-radius:               .25rem !default;
+$border-radius-xl:            .5rem !default;
+$border-radius-lg:            .375rem !default;
+$border-radius-sm:            .2rem !default;
+
+$rounded-pill:                50rem !default;
+
+$box-shadow-xs:               0px 2px 6px rgba($black, .125) !default;
+$box-shadow-sm:               0 .125rem .25rem rgba($black, .08) !default;
+$box-shadow:                  0 0 1.25rem rgba($black, .08) !default;
+$box-shadow-lg:               0 1rem 3rem rgba($black, .125) !default;
+
+
+// Transitions
+
+$transition-base-duration:      .2s;
+$transition-base:               all $transition-base-duration ease !default;
+$transition-fade:               opacity $transition-base-duration linear !default;
+$transition-collapse:           height $transition-base-duration ease !default;
+$transition-cubic-bezier:       all $transition-base-duration cubic-bezier(.77, 0, .2, 2.25) !default;
+$transition-bg:                 background-color $transition-base-duration * 2 linear !default;
+$transition-ease-in-out:        all $transition-base-duration ease-in-out !default;

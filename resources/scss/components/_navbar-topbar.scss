@@ -1,0 +1,109 @@
+//
+// MenuDino navbar
+//
+
+.navbar {
+    display: flex;
+    justify-content: stretch;
+    flex-direction: row;
+    background-image: none !important;
+    background-color: $brand;
+
+    &.topnavbar {
+        border-bottom: 1px solid $brand;
+    }
+
+    .navbar-header {
+        flex-grow: 1;
+        justify-content: flex-start;
+        align-items: center;
+        background-color: $brand;
+        background-image: none !important;
+        filter: none !important;
+
+        // navbar menu toggle icon change on mobile
+        .fa-navicon:before {
+            font-family: $icon-family-alt !important;
+            content:"\e601" !important;
+        }
+    }
+
+    .navbar-header {
+
+        // Brand logo
+        .brand-logo {
+            display: flex;
+
+            img:first-child {
+                display: none;
+            }
+            img {
+                display: inline-flex;
+            }
+        }
+
+        .navbar-collapse {
+            // navbar menu toggle icon change on desktop
+            .nav {
+                .fa-navicon:before {
+                    font-family: $icon-family-alt !important;
+                    content:"\e601" !important;
+                }
+            }
+        }
+
+        .navbar-opcao-entrega label {
+            font-weight: 400;
+            font-size: 85% !important;
+        }
+        
+        .navbar-opcao-entrega label:nth-of-type(1) {
+            color: $gray-800 !important;
+        }
+        
+        .navbar-opcao-entrega label:nth-of-type(2) {
+            font-weight: 600;
+            color: $brand !important;
+        }
+    }
+
+    // navbar form
+    .navbar-form {
+        border-bottom: none;
+
+        .fa-times:before {
+            font-family: $icon-family-alt !important;
+            content:"\e082" !important;
+        }
+    }
+
+}
+
+@media screen and(max-width: 768px) {
+    .navbar {
+        &.topnavbar {
+            background-color: $brand;
+        }
+    }
+}
+
+@media screen and(min-width: 768px) {
+    .navbar {
+        &.topnavbar {
+            background-color: $brand;
+            background-image: none !important;
+        }
+
+        .navbar-header {
+            .navbar-collapse {
+                border-top: 1px solid transparent;
+                box-shadow: none;
+            }
+        }
+    }
+}
+
+// Fix .navbar z-index on aside-toggled
+.layout-fixed .wrapper .topnavbar-wrapper {
+    z-index: 1002 !important;
+}

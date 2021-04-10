@@ -1,0 +1,69 @@
+// 
+// Cardapio grid styles , like iFood
+//
+
+#cardapio .cardapio-body .categories .panel-body {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, minmax(320px, 1fr));
+    grid-gap: 0;
+    padding: 0;
+    margin: 0;
+}
+
+@media only screen and (min-width: 960px) {
+    #cardapio .cardapio-body .categories .panel-body {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 15px;
+        padding: 0;
+    }
+}
+
+
+#cardapio .products .product-container .product-item .media {
+    display: grid;
+    grid-template-columns: 1fr 146px;
+    grid-gap: 5px;
+}
+
+#cardapio .products .product-container .product-item .media .media-body {
+    display: grid;
+    grid-template-rows: 1fr auto;
+    margin: 0;
+    width: 100% !important;
+}
+
+@media only screen and (max-width: 767px) {
+    #cardapio .products .product-container .product-item .media {
+         grid-template-columns: 1fr auto;
+    }
+}
+
+#cardapio .cardapio-body .categories .panel-body {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, minmax(320px, 1fr));
+    grid-gap: 0;
+    padding: 0;
+    margin: 0;
+}
+
+@media only screen and (min-width: 960px) {
+    #cardapio .cardapio-body .categories .panel-body {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 15px;
+        padding: 0;
+    }
+}
+
+#cardapio .products .product-container .product-item .media .media-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: self-start;
+}
+
+#cardapio .cardapio-body .categories .panel-body:before, .panel-body:after {
+    content: "" !important;
+    display: none;
+}

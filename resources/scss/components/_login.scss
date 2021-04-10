@@ -1,0 +1,458 @@
+// 
+// Login Page
+// .login-page, .account-page classes added to html when on /cliente uri
+//
+
+.login-page .content-wrapper {
+    max-width: 1366px;
+    margin: auto;
+    border-top: none;
+}
+
+.account-page .content-wrapper {
+    max-width: 1366px;
+    margin: 0 auto;
+    border-top: none;
+}
+
+.login-page.forgotten .content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0;
+    height: 100vh;
+    border-top: none;
+}
+
+.login-page .content-wrapper h4:first-of-type {
+    margin-bottom: 3rem;
+}
+.login-page .form-horizontal h4:first-of-type > small {
+    font-size: 1.6rem;
+}
+
+.login-page .panel, .account-page .panel {
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: $white;
+    background-clip: border-box;
+    border: 1px solid $gray-200;
+    border-radius: .375rem;
+    box-shadow: 0 0.75rem 1.5rem rgba(18,38,63,.03);
+}
+
+.account-page .panel.etapa-entrega-passada {
+    border: 1px solid $success;
+}
+
+.login-page .panel .panel-body, .account-page .panel .panel-body {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 3rem;
+    color: $gray-800;
+    border-top: none;
+}
+
+.account-page .panel .panel-heading {
+    border-bottom: 1px solid $gray-200 !important;
+}
+
+.account-page .panel.etapa-entrega-passada h4 {
+   color: $success;
+   font-weight: 600;
+}
+
+.login-page .form-horizontal h4:first-of-type {
+    font-size: 2.3rem;
+}
+
+.login-page .form-horizontal h4:first-of-type > small {
+    font-size: 1.6rem;
+}
+
+.login-page .form-horizontal a:first-of-type {
+    font-size: 1.6rem;
+    color: $brand;
+    font-weight: 600;
+}
+
+.login-page .form-control {
+    font-size: 1.6rem;
+    border-radius: .35rem;
+}
+
+.form-control:focus {
+    color: $gray-700;
+    background-color: $white;
+    border-color: rgba(48,110,255,.5);
+    outline: 0;
+    box-shadow: inset 0 1px 1px rgba(31,45,61,.075), 0 0 20px rgba(48,110,255,.1) !important;
+}
+
+a.btn.active, a.btn:active, input[type="submit"].btn:active {
+    box-shadow: inset 0 1px 0 hsla(0,0%,100%,.15);
+}
+
+.login-page a.btn-success, .account-page a.btn-success, input[type="submit"].btn {
+    background: $brand;
+    color: $white;
+    text-decoration: none;
+    text-transform: lowercase;
+    border: none;
+    padding: 0 20px;
+    border-radius: 0.35rem;
+    margin: 3px 0;
+    height: 50px;
+    font-size: 100%;
+    font-weight: 500;
+    transition: 100ms;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+
+.account-page .panel .panel-footer {
+    background-color: #fefeff;
+    border-top: 1px solid $gray-200;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.account-page .mt-lg {
+    margin-top: 3rem !important;
+    margin-bottom: 3rem !important;
+}
+
+.login-page .panel a.btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $white !important;
+    color: $gray-800;
+    box-shadow: inset 0 0 0 1px #d5dce3;
+    height: 50px;
+    line-height: 50px;
+    min-width: 50px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 4px;
+    transition: all .2s ease;
+    // disable longpress on safari
+    -webkit-touch-callout: none !important; 
+    user-select: none !important;
+}
+
+.login-page .panel a.btn > i, .login-page .panel .a.btn > svg {
+    display: inline-flex;
+    justify-self: flex-start;
+    align-self: center;
+    top: 0;
+    left: 0;
+    font-size: 28px;
+}
+
+.login-page .panel a.btn > span {
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    align-self: center;
+    width: 100%;
+    text-align: center;
+    margin-left: 0 !important;
+}
+
+.login-page .panel a.btn > span > b {
+    margin-left: 4px;
+}
+
+.login-page div.mt-lg div:nth-of-type(1) a.btn:hover {
+    color: $white;
+    border-color: $brand !important;
+    background-color: $brand !important;
+    box-shadow: inset 0 0 0 1px $brand !important;
+}
+
+.login-page div.mt-lg div:nth-of-type(1) a.btn:hover {
+    color: $white;
+    border-color: $brand !important;
+    background-color: $brand !important;
+    box-shadow: inset 0 0 0 1px $brand !important;
+}
+
+.login-page div.mt-lg div:nth-of-type(1) a.btn:hover > svg g path {
+    fill: $white !important;
+}
+
+.login-page div.mt-lg div:nth-of-type(1) a.btn.active,
+.login-page div.mt-lg div:nth-of-type(1) a.btn:active, 
+.login-page div.mt-lg div:nth-of-type(1) a.btn:focus   {
+    border-color: transparent !important;
+    box-shadow: inset 0 0 0 1px $brand;
+}
+
+.login-page div.mt-lg div:nth-of-type(2) a.btn:hover {
+    color: $white;
+    border-color: #3b43eb !important;
+    background-color: #3b43eb !important;
+    box-shadow: inset 0 0 0 1px #3b43eb !important;
+}
+
+.login-page div.mt-lg div:nth-of-type(2) a.btn > i {
+    color: #3b43eb;
+}
+
+.login-page div.mt-lg div:nth-of-type(2) a.btn:hover > i {
+    color: $white;
+}
+
+.login-page div.mt-lg div:nth-of-type(2) a.btn.active,
+.login-page div.mt-lg div:nth-of-type(2) a.btn:active,
+.login-page div.mt-lg div:nth-of-type(2) a.btn:focus   {
+    border-color: transparent !important;
+    box-shadow: inset 0 0 0 1px #3b43eb;
+}
+
+.login-page .sidebar .nav li:nth-of-type(5) {
+    filter: none;
+    opacity: 1;
+}
+
+.login-page .sidebar .nav li:nth-of-type(8) {
+    filter: brightness(1) grayscale(1);
+    opacity: 0.2;
+}
+
+// account page - orders history - https://novoapp.menudino.com/cliente/pedidos
+
+.account-page.orders .panel a.btn.btn-block {
+    height: auto;
+    padding: .75rem 1.75rem;
+    line-height: 1.5;
+    justify-content: center;
+}
+
+.account-page.orders .panel a.btn.btn-block > .fa-list:before {
+    font-family: 'simple-line-icons';
+    content: "\e067";
+}
+
+.account-page.order-status div.mt-lg div:nth-of-type(1) a.btn {
+    font-size: 100% !important;
+    margin-bottom: 3rem !important;
+}
+
+.account-page.orders .label-status-1 {
+    background-color: $gray-700;
+}
+.account-page.orders .label-status-2 {
+    background-color: #27c24c;
+}
+.account-page.orders .label-status-3 {
+    background-color: $warning;
+}
+.account-page.orders .label-status-4 {
+    background-color: #2684FF;
+}
+.account-page.orders .label-status-7 {
+    background-color: $success;
+}
+.account-page.orders .label-status-8 {
+    background-color: $brand;
+}
+.account-page.orders .label-status-9 {
+    background-color: #6E00FF;
+}
+
+// Order details - maybe move to tables.scss ?
+.account-page.order-details .text-success {
+    color: $success;
+}
+
+.account-page.order-details .content-wrapper {
+    margin-bottom: 120px;
+}
+
+.account-page.order-details .content-wrapper .row div:nth-of-type(1) a.btn {
+    color: $brand !important;
+    background-color: #fed9db !important;
+    border-color: #fed9db !important;
+    box-shadow: inset 0 1px 0 hsla(0,0%,100%,.15) !important;
+}
+
+.account-page.order-details .content-wrapper .row div:nth-of-type(1) a.btn:hover {
+    color: $white !important;
+    background-color: $brand !important;
+    border-color: $brand !important;
+    box-shadow: 0 4px 17px rgba(254,217,219,.35) !important;
+}
+
+.account-page.order-details a.btn span > i, .account-page.order-details a.btn > i, .account-page.order-details a.btn > small > i  {
+    margin-right: 5px !important;
+}
+.account-page.order-details a.btn span.text-bold  {
+    font-weight: 500 !important;
+}
+
+// Tables - maybe move to tables.scss ?
+.account-page table td {
+    border-top: 1px solid $gray-200 !important;
+}
+
+// Alerts
+.bg-warning-light {
+    font-size: 95%;
+    color: $warning !important;
+    background-color: #fec !important;
+    border: 1px solid #fec !important;
+    box-shadow: inset 0 1px 0 hsla(0,0%,100%,.15) !important;
+}
+
+.home-page .alert {
+    position: absolute;
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+    width: 90%;
+    max-width: 1366px;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%);
+    z-index: 1000;
+    line-height: 1.22;
+}
+
+.home-page .alert > i {
+    display: inline-flex !important;
+    padding: 1rem;
+}
+
+.alert-dismissable .close, .alert-dismissible .close {
+    position: absolute !important;
+    right: 2rem !important;
+    top: 0 !important;
+    color: inherit !important;
+    font-size: 3rem !important;
+    opacity: 1 !important;
+}
+
+
+// 
+// Checkout page
+//
+
+.account-page.checkout .content-wrapper {
+    margin-bottom: 120px;
+}
+
+.account-page.checkout #resumoPedido table {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 3rem;
+}
+
+.account-page.checkout #resumoPedido table tr {
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    border-bottom: 1px solid $gray-200;
+    width: 100%;
+}
+
+.account-page.checkout #resumoPedido table:not(#carrinho-itens) tr:last-of-type {
+    border-bottom: 1px solid transparent !important;
+}
+
+.account-page.checkout #resumoPedido a {
+    font-size: 85%;
+    font-weight: 600;
+}
+
+.account-page.checkout #resumoPedido a.btnRemover {
+    margin-left: 1rem;
+}
+
+.account-page.checkout #divAplicarCupom {
+    margin-top: 1.5rem;
+    width: 110%;
+}
+
+.account-page.checkout #cupomForm .form-control {
+    font-size: 16px !important;
+}
+
+.account-page.checkout table td {
+    border-top: 1px solid transparent !important;
+}
+
+
+#tabPagamento .btn, #tabPagamento .btn {
+    font-size: 100% !important;
+    color: $gray-800 !important;
+    border-color: #E0E6ED !important;
+}
+
+.tab-content {
+    color: $gray-800;
+    padding: 3rem;
+    border-color: $gray-200;
+    border-bottom-left-radius: .35rem;
+    border-bottom-right-radius: .35rem;
+    box-shadow: 0 0.75rem 1.5rem rgba(18,38,63,.03);
+}
+
+//
+// Botão Finalizar Compra
+//
+
+.account-page.checkout nav#submitButtons {
+    border-width: 0;
+    background-color: #fff;
+    height: auto;
+    min-height: 50px;
+    border-radius: 0;
+    box-shadow: 0 1px 3px rgba(0,0,0,.24);
+}
+.account-page.checkout nav#submitButtons .btn.btn-default[disabled] {
+    background-color: #ffffff !important;
+    border-color: transparent !important;
+}
+
+
+//
+// Credit Card Template, styles not working because of precendence, maybe generate a style tag apart and place to body end?
+//
+
+.jp-card {
+
+    //
+    // credit card colors
+    //
+
+    // mastercard
+    &.jp-card-mastercard {
+        &.jp-card-identified {
+            &.jp-card-front, &.jp-card-back {
+                &:before {
+                    background-color: #475465; //#3c4858
+                }
+            }
+        }
+    }
+
+    &.jp-card-identified {
+        box-shadow: 0 0.35rem 1.7rem rgba(18,38,63,0.3) !important;
+    }
+}

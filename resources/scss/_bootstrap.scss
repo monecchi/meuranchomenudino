@@ -1,0 +1,138 @@
+// 
+// Bootstrap Overrides
+// 
+
+.text-primary {
+    color: $brand !important;
+}
+.bg-primary {
+    background-color: $brand !important;
+}
+
+// Alerts background color
+.alert-primary {
+    background-color: $brand !important;
+}
+
+.text-success {
+    color: $success !important;
+}
+
+.bg-success {
+    background-color: $success !important;
+}
+
+.alert-success {
+    background-color: $success !important;
+}
+
+.text-warning {
+    color: $warning !important;
+}
+
+.alert-warning {
+    background-color: $warning !important;
+}
+
+.bg-warning {
+    background-color: $warning !important;
+}
+
+.text-danger {
+    color: $danger !important;
+}
+
+.bg-danger {
+    background-color: $danger !important;
+}
+
+.text-info {
+    color: $info !important;
+}
+
+.bg-info {
+    background-color: $info !important;
+}
+
+// Buttons
+
+.btn-lg, .btn-group-lg > .btn {
+    border-radius: 4px;
+}
+
+.btn-success {
+    background-color: $brand !important;
+}
+
+.btn-default {
+
+    color: #273444;
+    background-color: #eff2f7 !important;
+    border-color: #eff2f7 !important;
+    -webkit-box-shadow: inset 0 1px 0 hsla(0,0%,100%,.15);
+    box-shadow: inset 0 1px 0 hsla(0,0%,100%,.15);
+
+    &:hover {
+        color: #273444;
+        background-color: #E0E6ED !important;
+        border-color: #E0E6ED !important;
+    }
+    
+    &.active,
+    &:active {
+        color: #273444;
+        box-shadow: inset 0 1px 0 hsla(0,0%,100%,.15);        
+    }
+
+    &:focus,
+    &.focus {
+        color: #273444;
+        box-shadow: inset 0 1px 0 hsla(0,0%,100%,.15);          
+    }
+
+    &.btn-minus,
+    &.btn-plus {
+        background-color: transparent !important;
+        border-color: $gray-500 !important;
+        box-shadow: none;
+    }
+
+    &.btn-minus.active,
+    &.btn-plus.active,
+    &.btn-minus:active,
+    &.btn-plus:active {
+        color: #273444;
+        box-shadow: inset 0 1px 0 hsla(0,0%,100%,.15);
+    }
+}
+
+
+@media(min-width: 1200px) {
+    .container {
+        width: 1366px;
+    }
+}
+
+// Alerts
+
+.bg-warning-light {
+    font-size: 95%;
+    color: #ffab00 !important;
+    background-color: #fec !important;
+    border: 1px solid #fec !important;
+    box-shadow: inset 0 1px 0 hsla(0,0%,100%,.15) !important;
+}
+
+// 
+// Labels
+// 
+
+.has-dynamic-label label {
+    top: -3px;
+}
+
+.label-pagamento {
+    color: #3C4858;
+    background-color: #EFF2F7;
+    font-weight: normal;
+}

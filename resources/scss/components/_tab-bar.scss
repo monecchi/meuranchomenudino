@@ -1,0 +1,89 @@
+// 
+// Tab-bar
+//
+.icon-marmita {
+    display: inline-block;
+    position: relative;
+}
+.tab-bar {
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    background: #fff;
+    height: auto;
+    min-height: 50px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.24);
+    z-index: 1000;
+}
+.tab-bar--with-home-button {
+    height: 70px;
+    padding-bottom: 20px;
+}
+.tab-bar .tab-bar-item {
+    position: relative;
+    overflow: hidden;
+    padding: 8px 0;
+    width: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: $gray-900; //#3f3e3e;
+    text-decoration: none;
+    border: none;
+    background: none;
+}
+.tab-bar .tab-bar-item__badge {
+    background: $red;
+    border-radius: 10px;
+    position: absolute;
+    color: $white;
+    font-size: 0.5rem;
+    line-height: 0.5rem;
+    height: 16px;
+    top: 2px;
+    -webkit-transform: translateX(8px);
+    transform: translateX(8px);
+    z-index: 1;
+    min-width: 16px;
+    border: 2px solid $white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1px 3px 0 3px;
+}
+.tab-bar .tab-bar-item__icon {
+    position: relative;
+}
+.tab-bar .tab-bar-item__icon .icon-marmita {
+    width: 21px;
+}
+.tab-bar .tab-bar-item__icon .icon-marmita svg {
+    color: $gray-900;
+}
+.tab-bar .tab-bar-item--has-notifications {
+    position: absolute;
+    right: 19px;
+    top: 0;
+}
+.tab-bar .tab-bar-item canvas {
+    z-index: 1;
+}
+.tab-bar .tab-bar-item__title {
+    color: $gray-900;
+    font-weight: 300;
+    font-size: 75%;
+    line-height: 0.875rem;
+}
+.tab-bar .tab-bar-item__title--active {
+    font-weight: 500;
+}
+
+@media(min-width: 769px) {
+    .tab-bar {
+        display: none !important;
+    }
+}

@@ -1,0 +1,26 @@
+// 
+// Home Page
+//
+
+.layout-h {
+    &.layout-fixed {
+        .wrapper {
+            overflow-x: hidden;
+        }
+
+        .wrapper>section#main-section {
+            overflow-x: hidden;
+        }
+    }
+}
+
+.content-wrapper {
+    padding: 0;
+
+}
+
+@media only screen and (min-width: 768px) {
+    .content-wrapper {
+      padding: 0 !important;
+    }
+}
