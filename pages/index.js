@@ -16,15 +16,28 @@ export default function Home() {
 //
 // Permanent server side redirect
 //
-export const getServerSideProps = async (context) => {
+Home.getInitialProps = ({ res }) => {
 
-  const { res } = context;
+  if (res) {
+    res.writeHead(301, {
+      Location: 'https://app.menudino.com/meurancho'
+    });
+    res.end();
+  }
 
-  res.setHeader("location", "https://app.menudino.com/meurancho");
-  res.statusCode = 301;
-  res.end()
+  return {};
+};
 
-  //res.writeHead(301, { location: "https://menudino.com/meurancho" } );
-  //res.end();
 
-}
+// export const getServerSideProps = async (context) => {
+
+//   const { res } = context;
+
+//   res.setHeader("location", "https://app.menudino.com/meurancho");
+//   res.statusCode = 301;
+//   res.end()
+
+//   //res.writeHead(301, { location: "https://menudino.com/meurancho" } );
+//   //res.end();
+
+// }
