@@ -4,119 +4,129 @@
 
 #loginModal {
 
-    // Button Entrar com Email
-    .modal-body {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+  // Button Entrar com Email
+  .modal-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-        .btn {
-            &.showIdentificarLoginModal {
-                color: #3a3f51;
-                background-color: #ffffff !important;
-                border-color: rgba(0, 0, 0, .125);
-                margin-bottom: 3rem;
-                box-shadow: 0 0 0 transparent;
-                transition: background-color .2s ease, box-shadow .2s ease, transform .2s ease !important;
+    .btn {
+      &.showIdentificarLoginModal {
+        color: #3a3f51;
+        background-color: #ffffff !important;
+        border-color: rgba(0, 0, 0, .125);
+        margin-bottom: 3rem;
+        box-shadow: 0 0 0 transparent;
+        transition: background-color .2s ease, box-shadow .2s ease, transform .2s ease !important;
 
-                &>span {
-                    text-transform: lowercase;
-                }
-
-                &:hover {
-                    border-color: rgba(0, 0, 0, .125);
-                    box-shadow: 0.5rem 0.5rem 0 rgb(233 236 239 / 50%);
-                    transform: translateY(-1px);
-                }
-            }
+        &>span {
+          text-transform: lowercase;
         }
 
-        .row {
-            display: flex !important;
-            flex-direction: column;
-            width: 100%;
-
-            div[class*='col-'] {
-                padding: 0;
-                width: 100%;
-            }
-
-            div[class*='col-']:last-of-type > .btn {
-                margin-top: 1rem;
-            }
+        &:hover {
+          border-color: rgba(0, 0, 0, .125);
+          box-shadow: 0.5rem 0.5rem 0 rgb(233 236 239 / 50%);
+          transform: translateY(-1px);
         }
+      }
+    }
 
-        div {
-          &.div.mt-lg {
-            .col-xs-6 {
-              &:nth-of-type(1), &:nth-of-type(2) {
-                a {
-                  &.btn {
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                    color: #fff !important;
-                    background-color: transparent;
-                    box-shadow: none !important;
-                    height: 50px;
-                    line-height: 50px;
-                    min-width: 50px;
-                    padding-left: 25px;
-                    padding-right: 25px;
-                    border-radius: 4px;
-                    transition: all .2s ease;
-                    -webkit-touch-callout: none !important;
-                    user-select: none !important;
-                  }
+    .row {
+      display: flex !important;
+      flex-direction: column;
+      width: 100%;
 
-                  i, svg {
-                    display: inline-flex;
-                    justify-self: flex-start;
-                    align-self: center;
-                    top: 0;
-                    left: 0;
-                    font-size: 28px;
-                  }
+      div[class*='col-'] {
+        padding: 0;
+        width: 100%;
+      }
 
-                  & > span {
-                    display: flex;
-                    justify-content: center;
-                    justify-self: center;
-                    align-self: center;
-                    width: 100%;
-                    text-align: center;
-                    margin-left: 0 !important;
-                  }
+      div[class*='col-']:last-of-type>.btn {
+        margin-top: 1rem;
+      }
+    }
 
-                }
-              }
 
-              &:nth-of-type(1) {
-                background-color: $brand !important;
-                &:focus {
-                  border-color: transparent;
-                }
-                &:hover {
-                  color: #fff;
-                  border-color: $brand;
-                  background-color: $brand !important;
-                  box-shadow: inset 0 0 0 1px $brand !important;
-                }
-              }
-              &:nth-of-type(2) {
-                background-color: #3b43eb !important;
-                &:focus {
-                  border-color: transparent;
-                }
-                &:hover {
-                  color: #fff;
-                  border-color: #3b43eb;
-                  background-color: #3b43eb !important;
-                  box-shadow: inset 0 0 0 1px #3b43eb !important;
-                }
-              }
+    &.div.mt-lg {
+
+      .col-xs-6 {
+
+        &:nth-of-type(1),
+        &:nth-of-type(2) {
+          a {
+            &.btn {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              color: #fff !important;
+              background-color: transparent;
+              box-shadow: none !important;
+              height: 50px;
+              line-height: 50px;
+              min-width: 50px;
+              padding-left: 25px;
+              padding-right: 25px;
+              border-radius: 4px;
+              transition: all .2s ease;
+              -webkit-touch-callout: none !important;
+              user-select: none !important;
             }
+
+            i,
+            svg {
+              display: inline-flex;
+              justify-self: flex-start;
+              align-self: center;
+              top: 0;
+              left: 0;
+              font-size: 28px;
+            }
+
+            &>span {
+              display: flex;
+              justify-content: center;
+              justify-self: center;
+              align-self: center;
+              width: 100%;
+              text-align: center;
+              margin-left: 0 !important;
+            }
+
           }
         }
+
+        &:nth-of-type(1) {
+          background-color: $brand !important;
+
+          &:focus {
+            border-color: transparent;
+          }
+
+          &:hover {
+            color: #fff;
+            border-color: $brand;
+            background-color: $brand !important;
+            box-shadow: inset 0 0 0 1px $brand !important;
+          }
+        }
+
+        &:nth-of-type(2) {
+          background-color: #3b43eb !important;
+
+          &:focus {
+            border-color: transparent;
+          }
+
+          &:hover {
+            color: #fff;
+            border-color: #3b43eb;
+            background-color: #3b43eb !important;
+            box-shadow: inset 0 0 0 1px #3b43eb !important;
+          }
+        }
+      }
+
     }
+
+  }
 }

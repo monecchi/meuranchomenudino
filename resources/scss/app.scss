@@ -8,10 +8,10 @@
 * company: Meu Rancho Pizzaria Ltda
 * website: https://pizzariameurancho.com.br
 * url: https://novoapp.menudino.com/meurancho
-* 
+*
 */
 
-// 
+//
 // Global Reset, Overrides
 //
 
@@ -27,6 +27,7 @@
 
 // Global Component Styles
 @import './components/home-page';
+@import './components/page';
 @import './components/navbar-topbar';
 @import './components/cardapio-header';
 @import './components/cardapio-categories-nav';
@@ -35,6 +36,7 @@
 @import './components/modal';
 @import './components/modal-cardapio';
 @import './components/modal-login';
+@import './components/page-cupons';
 @import './components/login';
 @import './components/forms';
 @import './components/navbar-carrinho';
