@@ -10,6 +10,10 @@
     justify-content: center;
     align-items: center;
 
+    form, .form-horizontal {
+      width: 100%;
+    }
+
     .btn {
       &.showIdentificarLoginModal {
         color: #3a3f51;
@@ -30,7 +34,8 @@
         }
       }
 
-      &:focus, &:active {
+      &:focus,
+      &:active {
         color: #fff;
         border-color: inherit;
       }
@@ -52,86 +57,89 @@
       }
 
       // Login Buttons
-      &.div.mt-lg {
+      div {
+        &.mt-lg {
 
-        .col-xs-6 {
+          .col-xs-6 {
 
-          &:nth-of-type(1),
-          &:nth-of-type(2) {
-            a {
-              &.btn {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                color: #fff !important;
-                background-color: transparent;
-                box-shadow: none !important;
-                height: 50px;
-                line-height: 50px;
-                min-width: 50px;
-                padding-left: 25px;
-                padding-right: 25px;
-                border-radius: 4px;
-                transition: all .2s ease;
-                -webkit-touch-callout: none !important;
-                user-select: none !important;
+            &:nth-of-type(1),
+            &:nth-of-type(2) {
+              a {
+                &.btn {
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                  color: #fff !important;
+                  background-color: transparent;
+                  box-shadow: none !important;
+                  height: 50px;
+                  line-height: 50px;
+                  min-width: 50px;
+                  padding-left: 25px;
+                  padding-right: 25px;
+                  border-radius: 4px;
+                  transition: all .2s ease;
+                  -webkit-touch-callout: none !important;
+                  user-select: none !important;
+                }
+
+                i,
+                svg {
+                  display: inline-flex;
+                  justify-self: flex-start;
+                  align-self: center;
+                  top: 0;
+                  left: 0;
+                  font-size: 28px;
+                }
+
+                &>span {
+                  display: flex;
+                  justify-content: center;
+                  justify-self: center;
+                  align-self: center;
+                  width: 100%;
+                  text-align: center;
+                  margin-left: 0 !important;
+                }
+
               }
-
-              i,
-              svg {
-                display: inline-flex;
-                justify-self: flex-start;
-                align-self: center;
-                top: 0;
-                left: 0;
-                font-size: 28px;
-              }
-
-              &>span {
-                display: flex;
-                justify-content: center;
-                justify-self: center;
-                align-self: center;
-                width: 100%;
-                text-align: center;
-                margin-left: 0 !important;
-              }
-
-            }
-          }
-
-          &:nth-of-type(1) {
-            background-color: $brand !important;
-
-            &:focus {
-              border-color: transparent;
             }
 
-            &:hover {
-              color: #fff;
-              border-color: $brand;
+            &:nth-of-type(1) {
               background-color: $brand !important;
-              box-shadow: inset 0 0 0 1px $brand !important;
+
+              &:focus {
+                border-color: transparent;
+              }
+
+              &:hover {
+                color: #fff;
+                border-color: $brand;
+                background-color: $brand !important;
+                box-shadow: inset 0 0 0 1px $brand !important;
+              }
             }
-          }
 
-          &:nth-of-type(2) {
-            background-color: #3b43eb !important;
-
-            &:focus {
-              border-color: transparent;
-            }
-
-            &:hover {
-              color: #fff;
-              border-color: #3b43eb;
+            &:nth-of-type(2) {
               background-color: #3b43eb !important;
-              box-shadow: inset 0 0 0 1px #3b43eb !important;
+
+              &:focus {
+                border-color: transparent;
+              }
+
+              &:hover {
+                color: #fff;
+                border-color: #3b43eb;
+                background-color: #3b43eb !important;
+                box-shadow: inset 0 0 0 1px #3b43eb !important;
+              }
             }
           }
-        }
 
+        }
       }
+
 
     }
 

@@ -73,13 +73,16 @@
             width: 100%;
             margin: 1.85rem 0 0;
             border: none;
+            border-radius: 6px;
+            background-color: #ffffff;
 
             &:hover {
 
                 box-shadow: none;
 
                 .product-item {
-                    background: none;
+                    background-image: none !important;
+                    background: #ffffff;
                     text-decoration: none;
                     box-shadow: $box-shadow-lg !important;
                 }
