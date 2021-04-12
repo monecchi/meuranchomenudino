@@ -271,6 +271,12 @@
   color: $gray-800;
 }
 
+#itemModal {
+  .panel-body .radio label small {
+    font-size: 16px;
+  }
+}
+
 #itemModal .modal-content .fa-spinner:before {
   content: "\f1ce" !important;
   font-family: $icon-family;
@@ -355,8 +361,8 @@
   border-radius: .25rem;
 }
 
-#itemModal .modal-content #etapa1detalhes .panel-body small {
-  color: $gray-800;
+#itemModal .modal-content #etapa1detalhes .panel-heading b,  #itemModal .modal-content #etapa1detalhes .panel-heading small {
+  color: #5c6d85;
 }
 
 #itemModal .modal-content #etapa1detalhes .panel:nth-of-type(1) .panel-body>div.pb,
