@@ -1,0 +1,84 @@
+//
+// Page Cupons
+//
+
+.account-page {
+
+  &.cupons {
+
+    .content-wrapper {
+      .grid-item {
+        padding-top: 0;
+        padding-bottom: 15px;
+        padding-left: 20px;
+        padding-right: 20px;
+        max-width: 100%;
+      }
+    }
+
+    .gridCupom {
+      cursor: pointer;
+      padding: 2%;
+      box-shadow: 0px 3px 8px rgb(98 109 121 / 12%);
+      border-radius: .65rem;
+      transition: all .2s ease;
+
+      &:hover {
+        box-shadow: 0px 6px 13px rgb(98 109 121 / 18%);
+      }
+
+      div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+      }
+
+      titulo {
+        font: normal normal 600 28px/36px Courier New;
+        padding-bottom: 0.2em;
+      }
+
+      botao {
+        button {
+          i {
+            transform: scale(1);
+          }
+        }
+        a {
+          i {
+            transform: scale(1);
+          }
+        }
+      }
+
+      tesoura:after {
+        border-left: 2px dashed;
+      }
+
+    }
+
+  }
+
+}
+
+
+@media only screen and (min-width: 1920px) {
+
+  .account-page {
+    &.cupons {
+      .gridCupom {
+
+        &>desconto {
+          font-size: unset;
+        }
+
+        &>botao {
+          text-align: unset;
+        }
+
+      }
+    }
+  }
+
+}

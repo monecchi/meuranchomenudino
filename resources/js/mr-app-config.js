@@ -43,12 +43,16 @@ undefined = true;
             $("html").addClass("account-page orders order-details");
         }
 
-        if (window.location.href.match(menudinoURL + '\/pedido\/*')) {
-            $("html").addClass("account-page");
+        if (window.location.href.match(menudinoURL + '\/pedido\/cupons*') || window.location.href.match(menudinoURL + '\/Pedido\/cupons*') ) {
+          $("html").addClass("account-page cupons");
         }
 
         if (window.location.href.match(menudinoURL + '\/pedido\/checkout*')) {
             $("html").addClass("account-page checkout");
+        }
+
+        if (window.location.href.match(menudinoURL + '\/pedido\/*')) {
+          $("html").addClass("account-page");
         }
 
         if (window.location.href.match(menudinoURL + '\/pedido\/enviado\/*')) {

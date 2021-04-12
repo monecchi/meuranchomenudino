@@ -10,7 +10,9 @@
     background-color: $brand;
 
     &.topnavbar {
-        border-bottom: 2px solid $brand;
+        border-bottom: none !important;
+        background-color: $brand !important;
+        height: 100%;
     }
 
     .navbar-header {
@@ -83,6 +85,7 @@
     .navbar {
         &.topnavbar {
             background-color: $brand;
+            height: 100%;
         }
     }
 }

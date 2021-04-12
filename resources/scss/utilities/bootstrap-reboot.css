@@ -50,52 +50,52 @@ h6, h5, h4, h3, h2, h1 {
 }
 
 h1 {
-  font-size: calc(1.375rem + 1.5vw);
+  font-size: calc(21.6px + 1.5vw);
 }
 @media (min-width: 1200px) {
   h1 {
-    font-size: 2.5rem;
+    font-size: 40px;
   }
 }
 
 h2 {
-  font-size: calc(1.325rem + 0.9vw);
+  font-size: calc(21.12px + 0.9vw);
 }
 @media (min-width: 1200px) {
   h2 {
-    font-size: 2rem;
+    font-size: 32px;
   }
 }
 
 h3 {
-  font-size: calc(1.3rem + 0.6vw);
+  font-size: calc(20.8px + 0.6vw);
 }
 @media (min-width: 1200px) {
   h3 {
-    font-size: 1.75rem;
+    font-size: 28px;
   }
 }
 
 h4 {
-  font-size: calc(1.275rem + 0.3vw);
+  font-size: calc(20.4px + 0.3vw);
 }
 @media (min-width: 1200px) {
   h4 {
-    font-size: 1.5rem;
+    font-size: 24px;
   }
 }
 
 h5 {
-  font-size: 1.25rem;
+  font-size: 20px;
 }
 
 h6 {
-  font-size: 1rem;
+  font-size: 16px;
 }
 
 p {
   margin-top: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 16px;
 }
 
 abbr[title],
@@ -108,21 +108,21 @@ abbr[data-bs-original-title] {
 }
 
 address {
-  margin-bottom: 1rem;
+  margin-bottom: 16px;
   font-style: normal;
   line-height: inherit;
 }
 
 ol,
 ul {
-  padding-left: 2rem;
+  padding-left: 32px;
 }
 
 ol,
 ul,
 dl {
   margin-top: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 16px;
 }
 
 ol ol,
@@ -137,12 +137,12 @@ dt {
 }
 
 dd {
-  margin-bottom: 0.5rem;
+  margin-bottom: 8px;
   margin-left: 0;
 }
 
 blockquote {
-  margin: 0 0 1rem;
+  margin: 0 0 16px;
 }
 
 b,
@@ -151,18 +151,18 @@ strong {
 }
 
 small {
-  font-size: 0.875em;
+  font-size: 14px;
 }
 
 mark {
-  padding: 0.2em;
+  padding: 3.2px;
   background-color: #fcf8e3;
 }
 
 sub,
 sup {
   position: relative;
-  font-size: 0.75em;
+  font-size: 12px;
   line-height: 0;
   vertical-align: baseline;
 }

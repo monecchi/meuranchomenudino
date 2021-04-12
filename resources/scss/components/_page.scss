@@ -1,0 +1,14 @@
+//
+// Pages styles
+//
+
+.content-wrapper {
+
+  h4 {
+    &:first-of-type {
+      text-align: center;
+      margin-top: 2.25rem;
+      margin-bottom: 3rem;
+    }
+  }
+}
