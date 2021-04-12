@@ -35,8 +35,15 @@
       }
 
       titulo {
+        color: $brand !important;
         font: normal normal 600 28px/36px Courier New;
         padding-bottom: 0.2em;
+      }
+
+      descricao {
+        em {
+          color: $brand !important;
+        }
       }
 
       botao {
@@ -46,6 +53,11 @@
           }
         }
         a {
+
+          &.btn-success {
+            padding: 0 !important;
+          }
+
           i {
             transform: scale(1);
           }

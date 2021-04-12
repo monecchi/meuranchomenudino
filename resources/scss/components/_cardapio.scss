@@ -3,254 +3,241 @@
 //
 
 #btn-categories-right:before {
-  font-family: $icon-family-alt !important;
-  content: "\e606" !important;
+    font-family: $icon-family-alt !important;
+    content: "\e606" !important;
 }
 
 #btn-categories-left:before {
-  font-family: $icon-family-alt !important;
-  content: "\e605" !important;
+    font-family: $icon-family-alt !important;
+    content: "\e605" !important;
 }
 
 // Cardapio Body Contents
 
 #cardapio {
 
-  &.content {
-    margin: 0 auto;
-  }
+    &.content {
+        margin: 0 auto;
+    }
 
-  .cardapio-body {
+    .cardapio-body {
 
-    padding-right: 20px;
-    padding-left: 20px;
+        padding-right: 20px;
+        padding-left: 20px;
 
-    .categories {
+        .categories {
 
-      .panel {
-        background-color: transparent;
-        color: $gray-1000;
-        border: none;
-        border-radius: 0;
-        box-shadow: none;
+            .panel {
+                background-color: transparent;
+                color: $gray-1000;
+                border: none;
+                border-radius: 0;
+                box-shadow: none;
 
-        .panel-heading {
-          background-color: transparent;
-          color: $gray-1000;
-          padding: 1.25rem 0;
-          border-top: none; // 2px solid $brand;
+                .panel-heading {
+                    background-color: transparent;
+                    color: $gray-1000;
+                    padding: 1.25rem 0;
+                    border-top: none; // 2px solid $brand;
 
-          // categorias collapsible menu
-          .panel-title {
-            a {
+                    // categorias collapsible menu
+                    .panel-title {
+                        a {
 
-              &:focus {
-                color: $brandAlt;
-              }
+                            &:focus {
+                                color: $brandAlt;
+                            }
+                        }
+                    }
+                }
             }
-          }
-        }
-      }
 
-      .panel-body {
-        padding: 0;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr; // 3 columns grid
-        grid-column-gap: 1.85rem;
+            .panel-body {
+                padding: 0;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr; // 3 columns grid
+                grid-column-gap: 1.85rem;
 
-        &:before,
-        &:after {
-          display: none !important;
+                &:before, &:after {
+                    display: none !important;
+                }
+            }
+
         }
-      }
 
     }
 
-  }
-
-  .products {
-
-    // Product Item
-    .product-container {
-      width: 100%;
-      margin: 1.85rem 0 0;
-      border: 0;
-      background-color: transparent;
-      background-image: none;
-      box-shadow: none;
-
-      .product-item {
-        position: relative;
-        display: grid;
-        grid-template: "product-item";
-        width: 100%;
-        height: 100%;
-        max-height: 160px;
-        min-height: 160px;
-        padding: 1.85rem;
-        background: $white;
-        border-radius: 6px;
-        box-shadow: 0 1px 1px rgb(0 0 0 / 5%);
-        border-bottom: none;
-        text-decoration: none;
-        transition: all .2s ease;
-        overflow: hidden;
-
-        .media {
-          width: 100%;
-          display: grid;
-          grid-template-columns: 1fr 1fr 1fr;
-
-          .media-body {
+    .products {
+        // Product Item
+        .product-container {
             width: 100%;
-            display: grid;
-            grid-template:
-              "name"
-              "description"
-              "price";
-            grid-column: span 2 / span 2;
+            margin: 1.85rem 0 0;
+            border: none;
 
-            .name {
-              grid-area: name;
-              font-weight: 600;
-              color: $gray-1000;
-              line-height: 1.2;
-              text-transform: uppercase;
+            &:hover {
+
+                box-shadow: none;
+
+                .product-item {
+                    background: none;
+                    text-decoration: none;
+                    box-shadow: $box-shadow-lg !important;
+                }
+
             }
 
-            .product-description {
-              grid-area: description;
+            .product-item {
+
+                position: relative;
+                display: grid;
+                grid-template: "product-item";
+                width: 100%;
+                height: 100%;
+                min-height: 147px;
+                padding: 1.85rem;
+                background: $white;
+                border-bottom: none;
+                text-decoration: none;
+                transition: all .2s ease;
+                overflow: hidden;
+
+                .media {
+                    width: 100%;
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr;
+
+                    .media-body {
+                        width: 100%;
+                        display: grid;
+                        grid-template:
+                            "name"
+                            "description"
+                            "price";
+                        grid-column: span 2 / span 2;
+
+                        .name {
+                            grid-area: name;
+                            font-weight: 600;
+                            color: $gray-1000;
+                            text-transform: uppercase;
+                        }
+
+                        .product-description {
+                            grid-area: description;
+                        }
+
+                        .price {
+                            grid-area: price;
+                        }
+                    }
+
+                    .media-right {
+                        display: flex !important;
+                        justify-content: flex-end;
+                        align-self: flex-start;
+                        grid-column: span 1 / span 1;
+                        padding-left: 0 !important;
+                    }
+                }
+
             }
 
-            .price {
-              grid-area: price;
+            .imagem {
+                width: 100px;
+                height: 90px;
+                -o-object-fit: cover;
+                object-fit: cover;
+                border-radius: 4px;
+                pointer-events: none;
+                align-self: flex-start;
+                background: $gray-200 !important;
             }
-          }
 
-          .media-right {
-            display: flex !important;
-            justify-content: flex-end;
-            align-self: flex-start;
-            grid-column: span 1 / span 1;
-            padding-left: 0 !important;
-          }
+            // Cardapio Loading Items
+            .animated {
+                &.product-item {
+                    .name {
+                        width: 60%;
+                        margin-bottom: 1rem;
+                    }
+
+                    .product-description {
+                        width: 80%;
+                        margin-bottom: 1rem;
+                    }
+
+                    .name,
+                    .product-description,
+                    .media-right div {
+                        color: $gray-200 !important;
+                        background: $gray-200 !important;
+                        min-height: 1.7rem;
+                        line-height: 1.8;
+                        border-radius: .35rem;
+                    }
+
+                    &.pulse {
+                        animation: placeholderAnimation !important;
+                    }
+                }
+            }
+
+            &:nth-of-type(odd) {
+                margin-right: 0;
+            }
+            &:nth-of-type(2n) {
+                margin-right: 0;
+                margin-left: 0;
+            }
         }
-
-        &:hover {
-          text-decoration: none;
-        }
-
-      }
-
-      .imagem {
-        width: 100px;
-        height: 90px;
-        -o-object-fit: cover;
-        object-fit: cover;
-        border-radius: 4px;
-        pointer-events: none;
-        align-self: flex-start;
-        background: $gray-200 !important;
-      }
-
-      // Cardapio Loading Items
-      .animated {
-        &.product-item {
-          .name {
-            width: 60%;
-            margin-bottom: 1rem;
-          }
-
-          .product-description {
-            width: 80%;
-            margin-bottom: 1rem;
-          }
-
-          .name,
-          .product-description,
-          .media-right div {
-            color: $gray-200 !important;
-            background: $gray-200 !important;
-            min-height: 1.7rem;
-            line-height: 1.8;
-            border-radius: .35rem;
-          }
-
-          &.pulse {
-            animation: placeholderAnimation !important;
-          }
-        }
-      }
-
-      &:nth-of-type(odd) {
-        margin-right: 0;
-      }
-
-      &:nth-of-type(2n) {
-        margin-right: 0;
-        margin-left: 0;
-      }
     }
-
-    // .product-container:hover
-    &:hover {
-      .product-item {
-        background-image: none;
-        background-color: #fff;
-        box-shadow: $box-shadow-lg !important;
-      }
-    }
-
-  }
 }
 
 // remove later, remove from consumer menudino settings too
 #cardapio .products .product-container .product-item .media .media-right {
-  display: flex !important;
+    display: flex !important;
 }
 
 // hide extra expand category icon
 .categories-expand {
-  .truncate-overflow {
-
-    &:before,
-    &:after {
-      display: none;
+    .truncate-overflow {
+        &:before, &:after {
+            display: none;
+        }
     }
-  }
 }
 
 //
 // Adjust panel-body grid columns on smaller devices
 //
 @media only screen and (max-width: 940px) {
-  #cardapio {
+    #cardapio {
 
-    .cardapio-body {
+        .cardapio-body {
 
-      .categories {
+            .categories {
 
-        .panel-body {
-          grid-template-columns: 1fr 1fr;
+                .panel-body {
+                    grid-template-columns: 1fr 1fr;
+                }
+            }
         }
-      }
     }
-  }
 }
 
 @media only screen and (max-width: 560px) {
-  #cardapio {
+    #cardapio {
 
-    .cardapio-body {
+        .cardapio-body {
 
-      .categories {
+            .categories {
 
-        .panel-body {
-          grid-template-columns: 1fr;
+                .panel-body {
+                    grid-template-columns: 1fr;
+                }
+            }
         }
-      }
     }
-  }
 }
 
 
