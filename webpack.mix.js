@@ -1,26 +1,26 @@
 let mix = require('laravel-mix');
 
 mix.override((config) => {
-    delete config.watchOptions;
+  delete config.watchOptions;
 });
 
 mix.autoload({
-    jquery: ['$', 'window.jQuery']
+  jquery: ['$', 'window.jQuery']
 });
 
 mix.setPublicPath('public')
-    .sass('resources/scss/app.scss', 'public/css')
-    .combine([
-        'resources/js/mr-app-config.js',
-        'resources/js/mr-app-log.js'
-    ], 'public/js/mr-app-config.min.js')
-    .combine([
-        'resources/js/app.js',
-    ], 'public/js/app.min.js');
+  .sass('resources/scss/app.scss', 'public/css')
+  .combine([
+    'resources/js/mr-app-config.js',
+    'resources/js/mr-app-log.js'
+  ], 'public/js/mr-app-config.min.js')
+  .combine([
+    'resources/js/app.js',
+  ], 'public/js/app.min.js');
 
-    // Autoprefix options
+// Autoprefix options
 mix.options({
-    autoprefixer: { remove: false }
+  autoprefixer: { remove: false }
 });
 
 // Options

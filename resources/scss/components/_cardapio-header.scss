@@ -1,6 +1,6 @@
-// 
+//
 // Cardapio Header
-// 
+//
 .cardapio-header {
 
     h1 {
@@ -12,7 +12,7 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        align-items: center;        
+        align-items: center;
     }
 
     address {
@@ -85,13 +85,13 @@
 }
 
 
-// 
+//
 // Restaurant Status Label, custom "aberto" / "fechado" labels
 //
 
  .label-fechado,
  .label-aberto {
-     font-size: 85%;
+     font-size: 95%;
  }
 
  .label-fechado[data-toggle="modal"]:before, .label-aberto:before {
