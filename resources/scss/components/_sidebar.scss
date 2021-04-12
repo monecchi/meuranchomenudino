@@ -1,6 +1,6 @@
-// 
+//
 // Sidebar
-// 
+//
 
 .wrapper>.aside {
     width: 280px;
@@ -31,19 +31,28 @@
     color: #23262e;
 }
 
+.sidebar .nav > li.active {
+  background-color: #f5f7fa !important;
+  border-left-color: $brand;
+}
+
 .sidebar .nav>li.active,
 .sidebar .nav>li.open,
 .sidebar .nav>li.active>a,
 .sidebar .nav>li.open>a,
 .sidebar .nav>li.active .nav,
 .sidebar .nav>li.open .nav {
-    background-color: #f2f2f2; //#e9e9e9;
+    background-color: #f5f7fa; //#e9e9e9;
     color: $brand;
 }
 
 .sidebar .nav>li.active>a>em,
 .sidebar .nav>li.open>a>em {
     color: $brand;
+}
+
+.sidebar .nav > li > a:hover, .sidebar .nav > li > .nav-item:hover {
+  color: $brand;
 }
 
 .csstransforms3d .wrapper>.aside {

@@ -12,6 +12,12 @@ html {
     -ms-text-size-adjust: 100%;
 }
 
+body {
+  &.modal-open {
+    overflow-y: hidden !important;
+  }
+}
+
 a {
     color: $brand;
     background-color: transparent;
