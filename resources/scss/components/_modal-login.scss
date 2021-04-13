@@ -15,6 +15,7 @@
       width: 100%;
     }
 
+    // button "entrar com e-mail"
     .btn {
       &.showIdentificarLoginModal {
         color: #3a3f51;
@@ -28,10 +29,17 @@
           text-transform: lowercase;
         }
 
-        &:hover {
+        &:hover,
+        &:focus,
+        &:active {
           border-color: rgba(0, 0, 0, .125);
           box-shadow: 0.5rem 0.5rem 0 rgb(233 236 239 / 50%);
           transform: translateY(-1px);
+        }
+
+        &:focus,
+        &:active {
+          color: #3a3f51;
         }
       }
 
@@ -40,6 +48,43 @@
         color: #fff;
         border-color: inherit;
       }
+    }
+
+    input {
+      &#Email {
+        height: 55px;
+        border-radius: 4px;
+      }
+    }
+
+    // button login with email
+    .btn-success {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      height: 55px;
+      margin-bottom: 2rem;
+
+      &:hover {
+        border-color: inherit;
+        box-shadow: none !important;
+      }
+
+      &:active,
+      &:focus {
+        box-shadow: none !important;
+      }
+
+      &>i {
+        display: inline-flex !important;
+
+        &:before {
+          content: "";
+          font-family: 'simple-line-icons';
+        }
+      }
+
     }
 
     .row {
@@ -150,7 +195,6 @@
 
         }
       }
-
 
     }
 

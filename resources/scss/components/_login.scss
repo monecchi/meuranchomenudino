@@ -1,4 +1,4 @@
-// 
+//
 // Login Page
 // .login-page, .account-page classes added to html when on /cliente uri
 //
@@ -148,7 +148,7 @@ a.btn.active, a.btn:active, input[type="submit"].btn:active {
     border-radius: 4px;
     transition: all .2s ease;
     // disable longpress on safari
-    -webkit-touch-callout: none !important; 
+    -webkit-touch-callout: none !important;
     user-select: none !important;
 }
 
@@ -194,7 +194,7 @@ a.btn.active, a.btn:active, input[type="submit"].btn:active {
 }
 
 .login-page div.mt-lg div:nth-of-type(1) a.btn.active,
-.login-page div.mt-lg div:nth-of-type(1) a.btn:active, 
+.login-page div.mt-lg div:nth-of-type(1) a.btn:active,
 .login-page div.mt-lg div:nth-of-type(1) a.btn:focus   {
     border-color: transparent !important;
     box-shadow: inset 0 0 0 1px $brand;
@@ -232,76 +232,146 @@ a.btn.active, a.btn:active, input[type="submit"].btn:active {
     opacity: 0.2;
 }
 
-// account page - orders history - https://novoapp.menudino.com/cliente/pedidos
 
-.account-page.orders .panel a.btn.btn-block {
-    height: auto;
-    padding: .75rem 1.75rem;
-    line-height: 1.5;
-    justify-content: center;
+//
+// Account page - Orders history - https://novoapp.menudino.com/cliente/pedidos
+//
+
+.account-page {
+
+  &.orders {
+
+    .panel {
+      &:nth-of-type(1) {
+        margin-top: 3rem;
+      }
+
+      a {
+        &.btn {
+          &.btn-block {
+            height: auto;
+            padding: .75rem 1.75rem;
+            line-height: 1.5;
+            justify-content: center;
+
+            &>.fa-list:before {
+              font-family: 'simple-line-icons';
+              content: "\e067";
+            }
+          }
+        }
+      }
+    }
+
+    // order statuses
+    .label-status-1 {
+      background-color: $gray-700;
+    }
+
+    .label-status-2 {
+      background-color: #27c24c;
+    }
+
+    .label-status-3 {
+      background-color: $warning;
+    }
+
+    .label-status-4 {
+      background-color: #2684FF;
+    }
+
+    .label-status-7 {
+      background-color: $success;
+    }
+
+    .label-status-8 {
+      background-color: $brand;
+    }
+
+    .label-status-9 {
+      background-color: #6E00FF;
+    }
+
+  }
+
+  // Order status page
+  &.order-status {
+    div {
+      &.mt-lg {
+        div {
+          &:nth-of-type(1) {
+            a {
+              &.btn {
+                font-size: 100% !important;
+                margin-bottom: 3rem !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // Order details page
+  &.order-details {
+
+    .content-wrapper {
+      margin-bottom: 80px;
+
+      .row {
+        div {
+          &:nth-of-type(1) {
+            a {
+              &.btn {
+                color: $brand !important;
+                background-color: #fed9db !important;
+                border-color: #fed9db !important;
+                box-shadow: inset 0 1px 0 hsla(0, 0%, 100%, .15) !important;
+
+                &:hover {
+                  color: $white !important;
+                  background-color: $brand !important;
+                  border-color: $brand !important;
+                  box-shadow: 0 4px 17px rgba(254, 217, 219, .35) !important;
+                }
+              }
+            }
+          }
+        }
+
+      }
+    }
+
+    a {
+      &.btn {
+
+        &>i {
+          margin-right: 5px !important;
+        }
+
+        span {
+          &>i {
+            margin-right: 5px !important;
+          }
+
+          &.text-bold {
+            font-weight: 500 !important;
+          }
+        }
+
+        &>small>i {
+          margin-right: 5px !important;
+        }
+      }
+    }
+
+    .text-success {
+      color: $success;
+    }
+  }
+
 }
 
-.account-page.orders .panel a.btn.btn-block > .fa-list:before {
-    font-family: 'simple-line-icons';
-    content: "\e067";
-}
-
-.account-page.order-status div.mt-lg div:nth-of-type(1) a.btn {
-    font-size: 100% !important;
-    margin-bottom: 3rem !important;
-}
-
-.account-page.orders .label-status-1 {
-    background-color: $gray-700;
-}
-.account-page.orders .label-status-2 {
-    background-color: #27c24c;
-}
-.account-page.orders .label-status-3 {
-    background-color: $warning;
-}
-.account-page.orders .label-status-4 {
-    background-color: #2684FF;
-}
-.account-page.orders .label-status-7 {
-    background-color: $success;
-}
-.account-page.orders .label-status-8 {
-    background-color: $brand;
-}
-.account-page.orders .label-status-9 {
-    background-color: #6E00FF;
-}
-
-// Order details - maybe move to tables.scss ?
-.account-page.order-details .text-success {
-    color: $success;
-}
-
-.account-page.order-details .content-wrapper {
-    margin-bottom: 120px;
-}
-
-.account-page.order-details .content-wrapper .row div:nth-of-type(1) a.btn {
-    color: $brand !important;
-    background-color: #fed9db !important;
-    border-color: #fed9db !important;
-    box-shadow: inset 0 1px 0 hsla(0,0%,100%,.15) !important;
-}
-
-.account-page.order-details .content-wrapper .row div:nth-of-type(1) a.btn:hover {
-    color: $white !important;
-    background-color: $brand !important;
-    border-color: $brand !important;
-    box-shadow: 0 4px 17px rgba(254,217,219,.35) !important;
-}
-
-.account-page.order-details a.btn span > i, .account-page.order-details a.btn > i, .account-page.order-details a.btn > small > i  {
-    margin-right: 5px !important;
-}
-.account-page.order-details a.btn span.text-bold  {
-    font-weight: 500 !important;
-}
 
 // Tables - maybe move to tables.scss ?
 .account-page table td {
@@ -346,57 +416,196 @@ a.btn.active, a.btn:active, input[type="submit"].btn:active {
 }
 
 
-// 
+//
 // Checkout page
 //
 
-.account-page.checkout .content-wrapper {
-    margin-bottom: 120px;
+.account-page {
+
+  .panel {
+    &:nth-of-type(1) {
+      margin-top: 3rem;
+    }
+  }
+
+  &.checkout {
+
+    .col-md-offset-3 {
+      margin-left: 0;
+    }
+
+    .col-md-6 {
+      width: 100%;
+      float: none;
+      padding: 0;
+    }
+
+    .content-wrapper {
+      margin-bottom: 80px;
+    }
+
+    #resumoPedido {
+
+      a {
+        font-size: 85%;
+        font-weight: 600;
+        grid-area: action;
+
+        &.btnRemover {
+          margin-left: 1rem;
+        }
+      }
+
+      table {
+        display: flex;
+        flex-direction: row;
+        flex-grow: 1;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 3rem;
+
+        tr {
+          display: inline-flex;
+          justify-content: flex-start;
+          align-items: baseline;
+          width: 100%;
+          border-bottom: 1px solid $gray-200;
+        }
+
+        td {
+          border-top: 1px solid transparent !important;
+        }
+
+        &:not(#carrinho-itens) tr:last-of-type {
+          border-bottom: 1px solid transparent !important;
+        }
+
+        &#tableTotal {
+
+          tbody {
+            tr {
+
+              &:nth-of-type(7) {
+                &>td {
+                  width: 100%;
+                  display: grid;
+                  grid-template-columns: 1fr 1fr 1fr;
+                  grid-column-gap: 15px;
+                  grid-template-rows: 1fr 1fr;
+                  grid-template:
+                    "action"
+                    "title"
+                    "address";
+
+                  .panel-title {
+                    grid-area: title;
+                    text-align: left !important;
+                  }
+
+                  div {
+                    &.text-primary {
+                      grid-area: address;
+                    }
+
+                    &:nth-of-type(2) {
+                      grid-area: address;
+                      margin-left: 40px;
+                    }
+                  }
+
+                }
+              }
+
+              &:last-of-type {
+                &>td {
+                  width: 100%;
+                  text-align: left !important;
+
+                  &>p {
+                    padding-bottom: 1rem;
+                  }
+
+                  &>a {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 100%;
+
+                    i {
+                      margin-right: 8px;
+                    }
+                  }
+
+                }
+              }
+
+            }
+          }
+
+        }
+
+      }
+    }
+
+    #cupomForm {
+      .form-control {
+        font-size: 16px !important;
+      }
+    }
+
+    #divAplicarCupom {
+      margin-top: 1.5rem;
+      width: 110%;
+    }
+
+    // Botões entrar/login finalizar compra
+    nav {
+      &#submitButtons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        height: auto;
+        min-height: 50px;
+        border-width: 0;
+        padding-top: 15px !important;
+        background-color: #fff;
+        border-radius: .375rem;
+        box-shadow: 0 0.75rem 1.5rem rgb(18 38 63 / 3%);
+
+        a {
+          &#showIdentificarLoginModal {
+            color: #3c4858;
+            background-color: #eff2f7;
+            border-color: #eff2f7;
+          }
+        }
+
+        .btn.btn-default[disabled] {
+          background-color: #ffffff !important;
+          border-color: transparent !important;
+        }
+
+        &>.row {
+          width: 100%;
+          padding-left: 15px;
+          padding-right: 15px;
+        }
+
+      }
+    }
+
+
+  }
+
+  // end .checkout
+
 }
 
-.account-page.checkout #resumoPedido table {
-    display: flex;
-    flex-direction: row;
-    flex-grow: 1;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 3rem;
-}
 
-.account-page.checkout #resumoPedido table tr {
-    display: inline-flex;
-    justify-content: flex-start;
-    align-items: baseline;
-    border-bottom: 1px solid $gray-200;
-    width: 100%;
-}
-
-.account-page.checkout #resumoPedido table:not(#carrinho-itens) tr:last-of-type {
-    border-bottom: 1px solid transparent !important;
-}
-
-.account-page.checkout #resumoPedido a {
-    font-size: 85%;
-    font-weight: 600;
-}
-
-.account-page.checkout #resumoPedido a.btnRemover {
-    margin-left: 1rem;
-}
-
-.account-page.checkout #divAplicarCupom {
-    margin-top: 1.5rem;
-    width: 110%;
-}
-
-.account-page.checkout #cupomForm .form-control {
-    font-size: 16px !important;
-}
-
-.account-page.checkout table td {
-    border-top: 1px solid transparent !important;
-}
-
+//
+// Tabs pagamento
+//
 
 #tabPagamento .btn, #tabPagamento .btn {
     font-size: 100% !important;
@@ -411,23 +620,6 @@ a.btn.active, a.btn:active, input[type="submit"].btn:active {
     border-bottom-left-radius: .35rem;
     border-bottom-right-radius: .35rem;
     box-shadow: 0 0.75rem 1.5rem rgba(18,38,63,.03);
-}
-
-//
-// Botão Finalizar Compra
-//
-
-.account-page.checkout nav#submitButtons {
-    border-width: 0;
-    background-color: #fff;
-    height: auto;
-    min-height: 50px;
-    border-radius: 0;
-    box-shadow: 0 1px 3px rgba(0,0,0,.24);
-}
-.account-page.checkout nav#submitButtons .btn.btn-default[disabled] {
-    background-color: #ffffff !important;
-    border-color: transparent !important;
 }
 
 

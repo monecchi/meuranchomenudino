@@ -1,26 +1,64 @@
-// 
+//
 // navbar carrinho
 //
 
 nav#verCarrinho {
-    border-width: 0;
-    background-color: #fff;
-    height: auto;
-    min-height: 50px;
-    border-radius: 0;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.24);
+  border-width: 0;
+  background-color: #fff;
+  height: auto;
+  min-height: 50px;
+  border-radius: 0;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.24);
 }
 
 nav {
-    &#verCarrinho {
-        a {
-            &.btn {
-                border-radius: 4px;
+  &#verCarrinho {
+    a {
+      &#verCarrinhoLink {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 4px;
 
-                &.animated {
-                    animation: none !important;
-                }
-            }
+        em {
+          display: inline-flex;
+          margin-right: 10px;
+
+          &.icon-basket:before {
+            display: inline-flex;
+            content: "\e8cb" !important;
+            font-family: "Material Icons" !important;
+          }
         }
+
+        span {
+          display: inline-flex;
+          font-weight: 600;
+          text-transform: lowercase;
+          line-height: 0;
+        }
+
+        .badge {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 18px;
+          width: 25px;
+          height: 25px;
+          border-radius: 100px;
+        }
+
+        .carrinho-qtd {
+          position: relative;
+          top: -8px;
+          right: 5px;
+          padding: .55rem;
+        }
+
+        &.animated {
+          animation: none !important;
+        }
+      }
     }
+  }
 }

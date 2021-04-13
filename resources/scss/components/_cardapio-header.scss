@@ -108,16 +108,20 @@
 
 .label-fechado,
 .label-aberto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 95%;
+  padding: 1rem .85rem;
 }
 
 .label-fechado[data-toggle="modal"]:before,
 .label-aberto:before {
   content: "";
-  display: inline-block;
+  display: inline-flex;
   width: 10px;
   height: 10px;
-  vertical-align: middle;
+  vertical-align: initial;
   border-radius: 50%;
   background-color: #c0ccda;
   margin: 0 .4rem 0 auto;
