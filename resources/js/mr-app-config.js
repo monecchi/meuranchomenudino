@@ -10,16 +10,24 @@ undefined = true;
 
   var appcheckUrl = function () {
 
-    var menudinoURL = 'https://meurancho.menudino.com' || 'https://meuranchocontagem.menudino.com' || 'https://meuranchoraulsoares.menudino.com'
+    var menudinoURL = window.location.hostname
 
-    var testLocation = menudinoURL + '\/meurancho'
-    console.log('Testando "location.href.match" : ' + testLocation)
+    var testLocation = menudinoURL + window.location.path
+    console.log('Testando "current window.location.path" : ' + testLocation)
 
     if (window.location.href.match(menudinoURL)) {
       $("html").addClass("home-page");
     }
 
     if (window.location.href.match(menudinoURL + '\/meurancho')) {
+      $("html").addClass("home-page");
+    }
+
+    if (window.location.href.match(menudinoURL + '\/meuranchoraulsoares')) {
+      $("html").addClass("home-page");
+    }
+
+    if (window.location.href.match(menudinoURL + '\/meuranchocontagem')) {
       $("html").addClass("home-page");
     }
 
