@@ -1,6 +1,6 @@
 import Head from 'next/head'
 
-export default function Home() {
+export default function MeuRanchoBh() {
   return (
     <div>
       <Head>
@@ -16,7 +16,7 @@ export default function Home() {
 //
 // Permanent server side redirect
 //
-Home.getInitialProps = ({ res }) => {
+MeuRanchoBh.getInitialProps = ({ res }) => {
 
   if (res) {
     res.writeHead(301, {
@@ -27,17 +27,3 @@ Home.getInitialProps = ({ res }) => {
 
   return {};
 };
-
-
-// export const getServerSideProps = async (context) => {
-
-//   const { res } = context;
-
-//   res.setHeader("location", "https://meuranchobh.menudino.com/");
-//   res.statusCode = 301;
-//   res.end()
-
-//   //res.writeHead(301, { location: "https://meuranchobh.menudino.com/" } );
-//   //res.end();
-
-// }

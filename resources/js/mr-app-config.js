@@ -12,8 +12,8 @@ undefined = true;
 
     var menudinoURL = window.location.hostname
 
-    var testLocation = menudinoURL + window.location.path
-    console.log('Testando "current window.location.path" : ' + testLocation)
+    //var testLocation = window.location.href
+    //console.log('Testando "window.location.href" : ' + testLocation)
 
     if (window.location.href.match(menudinoURL)) {
       $("html").addClass("home-page");
