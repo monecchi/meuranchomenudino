@@ -20,7 +20,7 @@ MeuRanchoBh.getInitialProps = ({ res }) => {
 
   if (res) {
     res.writeHead(301, {
-      Location: 'https://meurancho.menudino.com/'
+      Location: 'https://meuranchobh.menudino.com/'
     });
     res.end();
   }
