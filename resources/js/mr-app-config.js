@@ -23,6 +23,10 @@ undefined = true;
       $("html").addClass("home-page");
     }
 
+    if (window.location.href.match(menudinoURL + '\/meuranchobh')) {
+      $("html").addClass("home-page");
+    }
+
     if (window.location.href.match(menudinoURL + '\/meuranchoraulsoares')) {
       $("html").addClass("home-page");
     }
